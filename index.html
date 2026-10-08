@@ -151,14 +151,6 @@ footer a:hover{color:var(--accent)}
 /* ---------- FLOATING ---------- */
 .wa{position:fixed;right:18px;bottom:18px;z-index:40;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;box-shadow:var(--shadow)}
 
-/* ---------- DISCLAIMER MODAL ---------- */
-.modal{position:fixed;inset:0;z-index:100;background:rgba(5,8,18,.82);display:grid;place-items:center;padding:20px}
-.modal.hide{display:none}
-.modal-box{background:var(--card);border:1px solid var(--accent);border-radius:var(--radius);max-width:560px;padding:30px}
-.modal-box h3{margin-bottom:10px;color:var(--accent)}
-.modal-box p{color:var(--muted);font-size:.92rem;margin-bottom:12px}
-.modal-box .cta{margin-top:16px}
-
 /* ---------- RESPONSIVE ---------- */
 @media(max-width:900px){
   .hero-grid,.about-grid,.contact-grid,.foot{grid-template-columns:1fr}
@@ -179,17 +171,6 @@ footer a:hover{color:var(--accent)}
 </head>
 <body>
 
-<!-- DISCLAIMER (Bar Council of India) -->
-<div class="modal" id="disclaimer">
-  <div class="modal-box">
-    <h3>Disclaimer</h3>
-    <p>The Bar Council of India does not permit advertisement or solicitation by advocates in any form or manner. By accessing this website, you acknowledge and confirm that you are seeking information relating to Advocate Vinay Arya of your own accord and that there has been no advertisement, personal communication, solicitation, invitation or inducement of any sort whatsoever from the advocate to solicit any work through this website.</p>
-    <p>The content of this website is for informational purposes only and should not be interpreted as legal advice or the creation of an advocate–client relationship.</p>
-    <div class="cta">
-      <button class="btn primary" id="agree">I Agree</button>
-      <a class="btn ghost" href="https://www.google.com">Decline</a>
-    </div>
-  </div>
 </div>
 
 <!-- TOP BAR -->
@@ -243,7 +224,7 @@ footer a:hover{color:var(--accent)}
       <p class="lead">Over 10 years of courtroom experience across criminal, civil, family and property matters. Clear advice, honest opinions and dedicated representation at every stage.</p>
       <div class="cta">
         <a href="#contact" class="btn primary">Book Consultation</a>
-        <a href="tel:+919876543210" class="btn ghost">📞 Call Now</a>
+        <a href="tel:+919986857597" class="btn ghost">📞 Call Now</a>
       </div>
       <div class="badge-row">
         <span class="badge">Enrolment No. KAR/1234/2013</span>
@@ -421,7 +402,7 @@ footer a:hover{color:var(--accent)}
   </div>
 </footer>
 
-<a class="wa" href="https://wa.me/919876543210" aria-label="WhatsApp">💬</a>
+<a class="wa" href="https://wa.me/919986857597" aria-label="WhatsApp">💬</a>
 
 <script>
 (function(){
@@ -464,10 +445,6 @@ footer a:hover{color:var(--accent)}
   document.getElementById('menuBtn').onclick=function(){ nav.classList.toggle('open') };
   nav.querySelectorAll('a').forEach(function(a){ a.onclick=function(){ nav.classList.remove('open') } });
 
-  /* ----- disclaimer ----- */
-  var dis=document.getElementById('disclaimer');
-  if(load('agreed')==='yes') dis.classList.add('hide');
-  document.getElementById('agree').onclick=function(){ store('agreed','yes'); dis.classList.add('hide'); };
 
   /* ----- counters ----- */
   var counted=false;
@@ -491,7 +468,7 @@ footer a:hover{color:var(--accent)}
       '%0APhone: '+encodeURIComponent(document.getElementById('phone').value)+
       '%0AArea: '+encodeURIComponent(document.getElementById('area').value)+
       '%0AMatter: '+encodeURIComponent(document.getElementById('msg').value);
-    window.open('https://wa.me/919876543210?text='+text,'_blank');
+    window.open('https://wa.me/919986857597?text='+text,'_blank');
   };
 
   document.getElementById('yr').textContent=new Date().getFullYear();
