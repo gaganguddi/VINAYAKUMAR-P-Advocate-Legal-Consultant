@@ -1,478 +1,253 @@
 <!DOCTYPE html>
-<html lang="en" data-mode="dark" data-accent="gold">
+<html lang="en" data-mode="dark">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Vinay Arya | Advocate, Bengaluru</title>
-<meta name="description" content="Vinay Arya, Advocate practising in Bengaluru. Criminal, civil, family, property and cheque bounce matters.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
+<title>Vinayakumar P | Advocate &amp; Legal Consultant | Aryas Law Associates, Karnataka</title>
+<meta name="description" content="Vinayakumar P, Advocate &amp; Legal Consultant, Aryas Law Associates. Civil, property, criminal, family, banking/DRT, consumer and cheque bounce matters in Karnataka.">
+<meta property="og:title" content="Vinayakumar P | Advocate &amp; Legal Consultant">
+<meta property="og:description" content="Committed to Justice. Focused on Solutions.">
+<link rel="icon" href="assets/logo.png">
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script type="application/ld+json">{"@context":"https://schema.org","@type":"LegalService","name":"Aryas Law Associates","founder":{"@type":"Person","name":"Vinayakumar P","jobTitle":"Advocate & Legal Consultant"},"areaServed":"Karnataka, India","slogan":"Committed to Justice. Focused on Solutions."}if("IntersectionObserver" in window){const o=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");o.unobserve(x.target)}}),{threshold:.12});
+$$(".card,.faq details,.facts div,.pic,.t,.chips,form,.soc").forEach(e=>{e.classList.add("rv");o.observe(e)})}
+$$("[data-ic]").forEach(e=>e.innerHTML=ic(e.dataset.ic));
+</script>
 <style>
-/* ---------- THEME TOKENS ---------- */
-:root{
-  --radius:14px;
-  --serif:'Playfair Display',Georgia,serif;
-  --sans:'Inter',system-ui,sans-serif;
-}
-/* modes */
-[data-mode="dark"]{
-  --bg:#0c1220; --bg2:#121a2e; --card:#17213a; --text:#e8ecf5; --muted:#9aa6c0; --line:#26324f; --shadow:0 10px 30px rgba(0,0,0,.35);
-}
-[data-mode="light"]{
-  --bg:#f7f5ef; --bg2:#ffffff; --card:#ffffff; --text:#1a2238; --muted:#5d6783; --line:#e3dfd2; --shadow:0 10px 30px rgba(30,40,70,.10);
-}
-/* accents */
-[data-accent="gold"]{--accent:#c9a24b; --accent-ink:#1a1405;}
-[data-accent="maroon"]{--accent:#a3263f; --accent-ink:#ffffff;}
-[data-accent="emerald"]{--accent:#1f9d6e; --accent-ink:#ffffff;}
-[data-accent="blue"]{--accent:#3b82f6; --accent-ink:#ffffff;}
-[data-mode="light"][data-accent="gold"]{--accent:#a77c1f;--accent-ink:#ffffff;}
-
-/* ---------- BASE ---------- */
+:root{--serif:'Playfair Display',Georgia,serif;--sans:'Inter',system-ui,sans-serif;--r:14px}
+[data-mode=dark]{--bg:#0a0a0a;--bg2:#121212;--card:#171717;--text:#f2f2f2;--muted:#a8a8a8;--line:#2b2b2b;--gold:#d4af37;--ink:#111}
+[data-mode=light]{--bg:#fafaf7;--bg2:#fff;--card:#fff;--text:#111;--muted:#555;--line:#e6e1d3;--gold:#a8801f;--ink:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:80px}
+html{scroll-behavior:smooth;scroll-padding-top:76px}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.65;transition:background .3s,color .3s}
-img{max-width:100%;display:block}
-a{color:inherit;text-decoration:none}
-.container{width:min(1120px,92%);margin-inline:auto}
-section{padding:84px 0}
-.alt{background:var(--bg2)}
+img,video{max-width:100%;display:block}a{color:inherit;text-decoration:none}
+.w{width:min(1120px,92%);margin-inline:auto}section{padding:80px 0}.alt{background:var(--bg2)}
 h1,h2,h3{font-family:var(--serif);line-height:1.2}
-.eyebrow{color:var(--accent);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
-.title{font-size:clamp(1.8rem,4vw,2.5rem);margin:8px 0 14px}
-.lead{color:var(--muted);max-width:640px}
-.center{text-align:center}.center .lead{margin-inline:auto}
-.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;border:2px solid var(--accent);cursor:pointer;font-family:inherit;font-size:.95rem;transition:.25s}
-.btn.primary{background:var(--accent);color:var(--accent-ink)}
-.btn.primary:hover{transform:translateY(-2px);box-shadow:var(--shadow)}
-.btn.ghost{background:transparent;color:var(--text)}
-.btn.ghost:hover{background:var(--accent);color:var(--accent-ink)}
-
-/* ---------- TOP BAR ---------- */
+.eb{color:var(--gold);font-weight:600;letter-spacing:.14em;text-transform:uppercase;font-size:.78rem}
+.t{font-size:clamp(1.7rem,4vw,2.4rem);margin:8px 0 12px}.lead{color:var(--muted);max-width:660px}
+.c{text-align:center}.c .lead{margin-inline:auto}
+.btn{display:inline-block;padding:12px 24px;border-radius:999px;font-weight:600;border:2px solid var(--gold);cursor:pointer;font:600 .95rem var(--sans);transition:.25s;background:transparent;color:var(--text)}
+.btn.p{background:var(--gold);color:var(--ink)}.btn.p:hover{transform:translateY(-2px)}.btn:not(.p):hover{background:var(--gold);color:var(--ink)}
 header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
-.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:14px}
-.logo{font-family:var(--serif);font-size:1.25rem;font-weight:700}
-.logo span{color:var(--accent)}
-nav ul{display:flex;gap:22px;list-style:none}
-nav a{font-size:.92rem;color:var(--muted);transition:.2s}
-nav a:hover{color:var(--accent)}
-.tools{display:flex;align-items:center;gap:10px}
-.menu-btn{display:none;background:none;border:1px solid var(--line);color:var(--text);width:40px;height:40px;border-radius:10px;font-size:1.2rem;cursor:pointer}
-
-/* theme dropdown */
-.theme{position:relative}
-.theme-btn{display:flex;align-items:center;gap:8px;background:var(--card);color:var(--text);border:1px solid var(--line);padding:8px 14px;border-radius:999px;cursor:pointer;font-family:inherit;font-size:.88rem}
-.theme-btn .dot{width:14px;height:14px;border-radius:50%;background:var(--accent)}
-.theme-btn .caret{transition:transform .25s;font-size:.7rem}
-.theme.open .caret{transform:rotate(180deg)}
-.theme-menu{position:absolute;right:0;top:calc(100% + 10px);width:230px;background:var(--card);border:1px solid var(--line);border-radius:var(--radius);box-shadow:var(--shadow);padding:14px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.2s}
-.theme.open .theme-menu{opacity:1;visibility:visible;transform:none}
-.theme-menu h4{font-size:.72rem;letter-spacing:.12em;text-transform:uppercase;color:var(--muted);margin:2px 0 8px}
-.seg{display:grid;grid-template-columns:1fr 1fr;gap:6px;margin-bottom:14px}
-.seg button{padding:9px;border-radius:10px;border:1px solid var(--line);background:var(--bg2);color:var(--text);cursor:pointer;font-family:inherit;font-size:.85rem}
-.seg button.active{border-color:var(--accent);background:var(--accent);color:var(--accent-ink);font-weight:600}
-.swatches{display:flex;gap:10px}
-.swatches button{width:34px;height:34px;border-radius:50%;border:3px solid transparent;cursor:pointer;outline:1px solid var(--line)}
-.swatches button.active{border-color:var(--text)}
-
-/* ---------- HERO ---------- */
-.hero{padding:70px 0 90px;background:radial-gradient(900px 400px at 85% 0%,color-mix(in srgb,var(--accent) 16%,transparent),transparent)}
-.hero-grid{display:grid;grid-template-columns:1.15fr .85fr;gap:50px;align-items:center}
-.hero h1{font-size:clamp(2.3rem,6vw,3.8rem);margin:10px 0}
-.hero h1 em{font-style:normal;color:var(--accent)}
-.role{color:var(--muted);margin-bottom:14px;font-weight:500}
-.hero p.lead{margin-bottom:28px}
-.cta{display:flex;gap:12px;flex-wrap:wrap}
-.photo{position:relative;aspect-ratio:4/5;border-radius:200px 200px var(--radius) var(--radius);overflow:hidden;border:2px solid var(--accent);box-shadow:var(--shadow);background:var(--card)}
-.photo img{width:100%;height:100%;object-fit:cover}
-.ph{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-family:var(--serif);font-size:4rem;color:var(--accent)}
-.badge-row{display:flex;gap:10px;flex-wrap:wrap;margin-top:26px}
-.badge{font-size:.8rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--card)}
-
-/* ---------- ABOUT ---------- */
-.about-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:50px;align-items:center}
-.about-img{aspect-ratio:1/1;border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);box-shadow:var(--shadow);position:relative;background:var(--card)}
-.about-img img{width:100%;height:100%;object-fit:cover}
-.facts{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-top:22px}
-.fact{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:14px}
-.fact b{display:block;font-size:.75rem;color:var(--accent);text-transform:uppercase;letter-spacing:.1em}
-.fact span{font-size:.92rem}
-
-/* ---------- STATS ---------- */
-.stats{display:grid;grid-template-columns:repeat(4,1fr);gap:18px;padding:36px 0}
-.stat{text-align:center}
-.stat strong{font-family:var(--serif);font-size:2.4rem;color:var(--accent);display:block}
-.stat span{color:var(--muted);font-size:.9rem}
-
-/* ---------- CARDS ---------- */
-.grid{display:grid;gap:20px;margin-top:40px}
-.g3{grid-template-columns:repeat(3,1fr)}
-.g2{grid-template-columns:repeat(2,1fr)}
-.card{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;transition:.25s}
-.card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:var(--shadow)}
-.icon{width:48px;height:48px;border-radius:12px;display:grid;place-items:center;font-size:1.4rem;background:color-mix(in srgb,var(--accent) 15%,transparent);margin-bottom:14px}
-.card h3{font-size:1.15rem;margin-bottom:6px}
-.card p{color:var(--muted);font-size:.93rem}
-.tag{display:inline-block;margin-top:12px;font-size:.78rem;color:var(--accent);font-weight:600}
-
-/* ---------- TESTIMONIALS ---------- */
-.quote{font-size:.97rem;color:var(--text);font-style:italic}
-.who{margin-top:14px;font-size:.85rem;color:var(--muted);font-style:normal}
-.stars{color:var(--accent);letter-spacing:2px;margin-bottom:8px}
-
-/* ---------- FAQ ---------- */
-.faq{max-width:780px;margin:40px auto 0}
-.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:16px 20px}
-.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between;gap:10px}
-.faq summary::after{content:"+";color:var(--accent);font-size:1.3rem;line-height:1}
-.faq details[open] summary::after{content:"–"}
-.faq p{color:var(--muted);margin-top:10px;font-size:.93rem}
-
-/* ---------- CONTACT ---------- */
-.contact-grid{display:grid;grid-template-columns:1fr 1.1fr;gap:40px;margin-top:40px}
-.info li{list-style:none;display:flex;gap:14px;margin-bottom:18px}
-.info .icon{margin:0;flex:none}
-.info small{color:var(--muted);display:block}
-form{background:var(--card);border:1px solid var(--line);border-radius:var(--radius);padding:26px;display:grid;gap:14px}
-input,select,textarea{width:100%;padding:12px 14px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font-family:inherit;font-size:.95rem}
-input:focus,select:focus,textarea:focus{outline:2px solid var(--accent);border-color:transparent}
-.map{border-radius:var(--radius);overflow:hidden;border:1px solid var(--line);margin-top:20px;height:210px}
-.map iframe{width:100%;height:100%;border:0;filter:var(--mapfilter,none)}
-[data-mode="dark"] .map iframe{filter:invert(.9) hue-rotate(180deg) brightness(.9)}
-
-/* ---------- FOOTER ---------- */
-footer{background:var(--bg2);border-top:1px solid var(--line);padding:44px 0 90px}
-.foot{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:30px}
-footer h4{margin-bottom:10px;font-family:var(--serif)}
-footer a,footer p{color:var(--muted);font-size:.9rem;display:block;margin-bottom:6px}
-footer a:hover{color:var(--accent)}
-.disc{margin-top:28px;padding-top:18px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted)}
-
-/* ---------- FLOATING ---------- */
-.wa{position:fixed;right:18px;bottom:18px;z-index:40;background:#25d366;color:#fff;width:54px;height:54px;border-radius:50%;display:grid;place-items:center;font-size:1.5rem;box-shadow:var(--shadow)}
-
-/* ---------- RESPONSIVE ---------- */
-@media(max-width:900px){
-  .hero-grid,.about-grid,.contact-grid,.foot{grid-template-columns:1fr}
-  .g3{grid-template-columns:1fr 1fr}
-  .stats{grid-template-columns:1fr 1fr}
-  .photo{max-width:320px;margin-inline:auto}
-  .menu-btn{display:block}
-  nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom:1px solid var(--line);display:none}
-  nav.open{display:block}
-  nav ul{flex-direction:column;padding:14px 5%;gap:14px}
-}
-@media(max-width:600px){
-  .g3,.g2{grid-template-columns:1fr}
-  .logo{font-size:1.05rem}
-  .theme-btn .label{display:none}
-}
+.bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.logo{font-family:var(--serif);font-weight:700;line-height:1.1}.logo small{display:block;font:500 .65rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
+nav ul{display:flex;gap:20px;list-style:none}nav a{font-size:.88rem;color:var(--muted)}nav a:hover{color:var(--gold)}
+.tools{display:flex;gap:10px;align-items:center}.mb{display:none;background:none;border:1px solid var(--line);color:var(--text);width:40px;height:40px;border-radius:10px;font-size:1.2rem;cursor:pointer}
+.th{position:relative}.thb{display:flex;gap:8px;align-items:center;background:var(--card);color:var(--text);border:1px solid var(--line);padding:8px 14px;border-radius:999px;cursor:pointer;font:.85rem var(--sans)}
+.thb i{width:13px;height:13px;border-radius:50%;background:var(--gold)}.thb em{font-size:.65rem;font-style:normal;transition:.25s}.th.open em{transform:rotate(180deg)}
+.thm{position:absolute;right:0;top:calc(100% + 10px);width:180px;background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:8px;opacity:0;visibility:hidden;transform:translateY(-8px);transition:.2s}
+.th.open .thm{opacity:1;visibility:visible;transform:none}
+.thm button{display:block;width:100%;text-align:left;padding:10px;border:0;border-radius:8px;background:none;color:var(--text);cursor:pointer;font:.9rem var(--sans)}.thm button.on{background:var(--gold);color:var(--ink);font-weight:600}
+.hero{position:relative;min-height:92vh;display:flex;align-items:center;overflow:hidden;color:#fff;background:#000}
+.hero video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.hero:after{content:"";position:absolute;inset:0;background:linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.82))}
+.hero .w{position:relative;z-index:1;padding:70px 0}.hero h1{font-size:clamp(2.4rem,7vw,4.4rem);letter-spacing:.02em;margin:10px 0 4px}
+.hero h2{font:500 1.2rem var(--sans);color:var(--gold);letter-spacing:.12em;text-transform:uppercase}.hero .firm{margin:6px 0 18px;color:#ddd}
+.hero .tag{font:italic 1.35rem var(--serif);margin-bottom:12px}.hero p.d{color:#cfcfcf;max-width:560px;margin-bottom:28px}
+.hero .btn:not(.p){color:#fff}.cta{display:flex;gap:12px;flex-wrap:wrap}
+.g{display:grid;gap:20px;margin-top:38px}.g3{grid-template-columns:repeat(3,1fr)}.g2{grid-template-columns:repeat(2,1fr)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;transition:.25s}
+.card:hover{transform:translateY(-4px);border-color:var(--gold)}.card h3{font-size:1.1rem;margin-bottom:6px}.card p,.card li{color:var(--muted);font-size:.92rem}
+.ic{width:46px;height:46px;border-radius:12px;display:grid;place-items:center;font-size:1.35rem;background:color-mix(in srgb,var(--gold) 15%,transparent);margin-bottom:12px}
+.more{color:var(--gold);font-weight:600;font-size:.82rem;margin-top:10px;display:inline-block;cursor:pointer;background:none;border:0;font-family:var(--sans)}
+.ab{display:grid;grid-template-columns:.85fr 1.15fr;gap:48px;align-items:center}
+.pic{aspect-ratio:4/5;border-radius:var(--r);overflow:hidden;border:2px solid var(--gold);background:var(--card);position:relative;display:grid;place-items:center;font:4rem var(--serif);color:var(--gold)}
+.pic img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.chips{display:flex;flex-wrap:wrap;gap:8px;margin-top:18px}.chips span{font-size:.8rem;padding:6px 12px;border:1px solid var(--line);border-radius:999px;color:var(--muted);background:var(--card)}
+.facts{display:grid;grid-template-columns:1fr 1fr;gap:12px;margin-top:20px}.facts div{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;font-size:.9rem}
+.facts b{display:block;font-size:.72rem;color:var(--gold);text-transform:uppercase;letter-spacing:.1em}
+.band{background:linear-gradient(135deg,#0a0a0a,#1c1708);color:#fff;text-align:center;border-block:1px solid var(--gold)}.band p{color:#cfcfcf;margin-bottom:22px}.band .btn:not(.p){color:#fff}.band .cta{justify-content:center}
+.bl li{margin:4px 0 0 18px}.bl h3{color:var(--gold);margin-bottom:8px}
+.faq{max-width:780px;margin:36px auto 0;text-align:left}.faq details{background:var(--card);border:1px solid var(--line);border-radius:12px;margin-bottom:12px;padding:15px 20px}
+.faq summary{cursor:pointer;font-weight:600;list-style:none;display:flex;justify-content:space-between}.faq summary:after{content:"+";color:var(--gold);font-size:1.3rem}.faq details[open] summary:after{content:"–"}.faq p{color:var(--muted);margin-top:8px;font-size:.92rem}
+.cg{display:grid;grid-template-columns:1fr 1.1fr;gap:38px;margin-top:36px}.info li{list-style:none;display:flex;gap:14px;margin-bottom:16px}.info small{display:block;color:var(--muted)}.info .ic{margin:0;flex:none}
+form{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px;display:grid;gap:12px}.r2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+input,select,textarea{width:100%;padding:11px 13px;border-radius:10px;border:1px solid var(--line);background:var(--bg);color:var(--text);font:.93rem var(--sans)}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--gold);border-color:transparent}form small{color:var(--muted);font-size:.78rem}
+.soc{display:flex;flex-wrap:wrap;gap:12px;justify-content:center;margin-top:26px}.soc a{padding:10px 20px;border:1px solid var(--line);border-radius:999px;background:var(--card)}.soc a:hover{border-color:var(--gold);color:var(--gold)}
+footer{background:var(--bg2);border-top:1px solid var(--line);padding:44px 0 90px}.fg{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:28px}
+footer h4{font-family:var(--serif);margin-bottom:8px}footer a,footer p{display:block;color:var(--muted);font-size:.9rem;margin-bottom:5px}footer a:hover{color:var(--gold)}
+.copy{margin-top:26px;padding-top:16px;border-top:1px solid var(--line);font-size:.8rem;color:var(--muted);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px}.copy a{display:inline;margin-left:12px;cursor:pointer}
+.fl{position:fixed;right:16px;bottom:16px;z-index:40;display:flex;flex-direction:column;gap:10px}.fl a{width:52px;height:52px;border-radius:50%;display:grid;place-items:center;font-size:1.4rem;color:#fff;box-shadow:0 6px 18px rgba(0,0,0,.4)}
+.mo{position:fixed;inset:0;z-index:100;background:rgba(0,0,0,.8);display:none;place-items:center;padding:18px}.mo.on{display:grid}
+.mbox{background:var(--card);border:1px solid var(--gold);border-radius:var(--r);max-width:560px;width:100%;max-height:85vh;overflow:auto;padding:26px;position:relative}
+.mbox h3{color:var(--gold);margin-bottom:10px}.mbox p{color:var(--muted);font-size:.92rem;margin-bottom:10px}.mbox ul{margin-left:20px;color:var(--muted);font-size:.93rem}.x{position:absolute;right:12px;top:8px;background:none;border:0;color:var(--text);font-size:1.6rem;cursor:pointer}
+.i{display:inline-flex;align-items:center}.i svg,.ic svg{width:22px;height:22px}.ic svg{color:var(--gold)}
+.logo{display:flex;align-items:center;gap:10px}.logo img{height:40px;width:auto}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px}.btn svg{width:18px;height:18px}
+.thm button{display:flex;align-items:center;gap:8px}.thm svg,.thb em svg{width:16px;height:16px}
+.soc a{display:inline-flex;align-items:center;gap:8px}.soc svg{width:18px;height:18px}
+.fl a svg{width:26px;height:26px}
+footer p svg{width:16px;height:16px;vertical-align:-3px;margin-right:8px;color:var(--gold)}
+@media(max-width:900px){.ab,.cg,.fg{grid-template-columns:1fr}.g3{grid-template-columns:1fr 1fr}.pic{width:100%;max-width:520px;margin-inline:auto}.mb{display:block}
+nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom:1px solid var(--line);display:none}nav.open{display:block}nav ul{flex-direction:column;padding:14px 5%;gap:14px}}
+@media(max-width:600px){.g3,.g2,.r2{grid-template-columns:1fr}.thb span{display:none}.logo{font-size:1rem}}
+.rv{opacity:0}.rv.in{opacity:1;animation:up .7s backwards}@keyframes up{from{opacity:0;transform:translateY(26px)}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1}.rv.in{animation:none}.hero video{display:none}}
 </style>
 </head>
 <body>
+<header><div class="w bar">
+<a href="#home" class="logo"><img src="assets/logo.png" alt="Aryas Law Associates logo" onerror="this.remove()"><span>Vinayakumar P<small>Aryas Law Associates</small></span></a>
+<nav id="nav"><ul>
+<li><a href="#about">About</a></li><li><a href="#practice">Practice Areas</a></li><li><a href="#why">Why Us</a></li><li><a href="#articles">Articles</a></li><li><a href="#faq">FAQ</a></li><li><a href="#contact">Contact</a></li></ul></nav>
+<div class="tools">
+<div class="th" id="th"><button class="thb" id="thb"><i></i><span>Theme</span><em class="i" data-ic="chev"></em></button>
+<div class="thm"><button data-m="dark"><span class="i" data-ic="moon"></span>Dark (Black &amp; Gold)</button><button data-m="light"><span class="i" data-ic="sun"></span>Light (White &amp; Gold)</button></div></div>
+<button class="mb" id="mb" aria-label="Menu"><span class="i" data-ic="menu"></span></button></div></div></header>
 
-</div>
-
-<!-- TOP BAR -->
-<header>
-  <div class="container bar">
-    <a href="#home" class="logo">Vinay <span>Arya</span> · Advocate</a>
-    <nav id="nav">
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#practice">Practice Areas</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#testimonials">Reviews</a></li>
-        <li><a href="#faq">FAQ</a></li>
-        <li><a href="#blog">Updates</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-    <div class="tools">
-      <!-- THEME DROPDOWN -->
-      <div class="theme" id="theme">
-        <button class="theme-btn" id="themeBtn" aria-haspopup="true" aria-expanded="false">
-          <span class="dot"></span><span class="label">Theme</span><span class="caret">▼</span>
-        </button>
-        <div class="theme-menu" id="themeMenu">
-          <h4>Mode</h4>
-          <div class="seg" id="modeSeg">
-            <button data-mode="dark">🌙 Dark</button>
-            <button data-mode="light">☀️ Light</button>
-          </div>
-          <h4>Colour</h4>
-          <div class="swatches" id="accentSw">
-            <button data-accent="gold" title="Navy &amp; Gold" style="background:#c9a24b"></button>
-            <button data-accent="maroon" title="Maroon" style="background:#a3263f"></button>
-            <button data-accent="emerald" title="Emerald" style="background:#1f9d6e"></button>
-            <button data-accent="blue" title="Blue" style="background:#3b82f6"></button>
-          </div>
-        </div>
-      </div>
-      <button class="menu-btn" id="menuBtn" aria-label="Menu">☰</button>
-    </div>
-  </div>
-</header>
-
-<!-- HERO -->
 <section class="hero" id="home">
-  <div class="container hero-grid">
-    <div>
-      <span class="eyebrow">Advocate · Bengaluru</span>
-      <h1>Justice with <em>integrity</em>,<br>counsel with care.</h1>
-      <p class="role">Vinay Arya, B.A. LL.B. · High Court of Karnataka</p>
-      <p class="lead">Over 10 years of courtroom experience across criminal, civil, family and property matters. Clear advice, honest opinions and dedicated representation at every stage.</p>
-      <div class="cta">
-        <a href="#contact" class="btn primary">Book Consultation</a>
-        <a href="tel:+919986857597" class="btn ghost">📞 Call Now</a>
-      </div>
-      <div class="badge-row">
-        <span class="badge">Enrolment No. KAR/1234/2013</span>
-        <span class="badge">Kannada · English · Hindi</span>
-        <span class="badge">Member, Bangalore Bar Association</span>
-      </div>
-    </div>
-    <div class="photo">
-      <img src="assets/advocate.jpg" alt="Advocate Vinay Arya" onerror="this.style.display='none';this.nextElementSibling.style.display='flex'">
-      <div class="ph">VA</div>
-    </div>
-  </div>
-</section>
+<video autoplay muted loop playsinline preload="auto"><source src="assets/BackgroundVideo/backgroundVideo.mp4" type="video/mp4"></video>
+<div class="w"><span class="eb">Karnataka · Advocate</span>
+<h1>VINAYAKUMAR P</h1><h2>Advocate &amp; Legal Consultant</h2><p class="firm">Aryas Law Associates</p>
+<p class="tag">“Committed to Justice. Focused on Solutions.”</p>
+<p class="d">Professional legal consultation, litigation representation, legal drafting and strategic legal assistance.</p>
+<div class="cta"><a href="#consult" class="btn p">Book a Consultation</a><a data-wa class="btn" target="_blank">WhatsApp Us</a></div></div></section>
 
-<!-- STATS -->
-<div class="alt">
-  <div class="container stats">
-    <div class="stat"><strong data-count="10">0</strong><span>Years of Practice</span></div>
-    <div class="stat"><strong data-count="850">0</strong><span>Matters Handled</span></div>
-    <div class="stat"><strong data-count="5">0</strong><span>Courts &amp; Tribunals</span></div>
-    <div class="stat"><strong data-count="12">0</strong><span>Practice Areas</span></div>
-  </div>
-</div>
+<section id="about"><div class="w ab">
+<div class="pic">VP<img src="assets/advocate.jpg" alt="Vinayakumar P, Advocate" onerror="this.remove()"></div>
+<div><span class="eb">About Us</span><h2 class="t">Experienced Legal Counsel. Practical Legal Solutions.</h2>
+<p class="lead">Vinayakumar P is an Advocate and Legal Consultant practising in Karnataka, with experience in civil, criminal, property, family, banking, consumer and other litigation matters.</p>
+<p class="lead" style="margin-top:10px">With a client-focused approach, the practice aims to understand each matter comprehensively, identify the appropriate legal remedies and provide practical legal strategies suited to the client’s circumstances.</p>
+<div class="facts"><div><b>Qualifications</b>B.A., LL.B.</div><div><b>Practice</b>Karnataka</div><div><b>Organisation</b>Aryas Law Associates</div><div><b>Bar Council Enrolment</b>To be added</div></div>
+<div class="chips"><span>Litigation strategy</span><span>Legal drafting</span><span>Court representation</span><span>Property dispute analysis</span><span>Negotiation &amp; settlement</span><span>Legal research</span><span>Client consultation</span></div></div></div></section>
 
-<!-- ABOUT -->
-<section id="about">
-  <div class="container about-grid">
-    <div class="about-img">
-      <img src="assets/about.jpg" alt="Advocate in chambers" onerror="this.style.display='none'">
-    </div>
-    <div>
-      <span class="eyebrow">About the Advocate</span>
-      <h2 class="title">A practice built on trust and preparation</h2>
-      <p class="lead">Vinay Arya is an advocate practising before the High Court of Karnataka, the City Civil Court and various tribunals in Bengaluru. He believes every client deserves a clear explanation of their legal position, realistic expectations and a strategy tailored to their case.</p>
-      <div class="facts">
-        <div class="fact"><b>Education</b><span>B.A. LL.B., Bangalore University</span></div>
-        <div class="fact"><b>Enrolled With</b><span>Karnataka State Bar Council</span></div>
-        <div class="fact"><b>Courts</b><span>High Court, City Civil, Sessions, NCLT, Consumer Forum</span></div>
-        <div class="fact"><b>Office</b><span>Chambers, Bengaluru</span></div>
-      </div>
-    </div>
-  </div>
-</section>
+<section class="alt" id="practice"><div class="w c"><span class="eb">Areas of Practice</span><h2 class="t">Where we can help</h2><p class="lead">Select any practice area to see the matters we handle.</p><div class="g g3" id="pa" style="text-align:left"></div></div></section>
 
-<!-- PRACTICE AREAS -->
-<section class="alt" id="practice">
-  <div class="container center">
-    <span class="eyebrow">Practice Areas</span>
-    <h2 class="title">Where I can help</h2>
-    <p class="lead">Representation and advice across a broad range of legal matters.</p>
-    <div class="grid g3" style="text-align:left">
-      <div class="card"><div class="icon">⚖️</div><h3>Criminal Law</h3><p>Bail, quashing petitions, trial defence, appeals and revisions under BNS and BNSS.</p></div>
-      <div class="card"><div class="icon">📜</div><h3>Civil Litigation</h3><p>Suits for declaration, injunction, recovery, specific performance and execution.</p></div>
-      <div class="card"><div class="icon">👨‍👩‍👧</div><h3>Family Law</h3><p>Divorce, maintenance, child custody, domestic violence and guardianship.</p></div>
-      <div class="card"><div class="icon">🏠</div><h3>Property &amp; Real Estate</h3><p>Title verification, partition, sale deeds, RERA and landlord–tenant disputes.</p></div>
-      <div class="card"><div class="icon">🧾</div><h3>Cheque Bounce</h3><p>Notices and complaints under Section 138 of the Negotiable Instruments Act.</p></div>
-      <div class="card"><div class="icon">🏢</div><h3>Corporate &amp; Commercial</h3><p>Company incorporation, contracts, shareholder disputes and recovery.</p></div>
-      <div class="card"><div class="icon">🛒</div><h3>Consumer Protection</h3><p>Complaints before District, State and National Consumer Commissions.</p></div>
-      <div class="card"><div class="icon">💼</div><h3>Labour &amp; Service</h3><p>Termination, wages, PF/ESI and service matters before tribunals and the High Court.</p></div>
-      <div class="card"><div class="icon">💻</div><h3>Cyber Law</h3><p>Online fraud, defamation, data privacy and IT Act matters.</p></div>
-      <div class="card"><div class="icon">🚗</div><h3>Motor Accident Claims</h3><p>Compensation claims before the MACT for injury and death cases.</p></div>
-      <div class="card"><div class="icon">🤝</div><h3>Arbitration &amp; Mediation</h3><p>Out-of-court settlement, arbitration proceedings and enforcement of awards.</p></div>
-      <div class="card"><div class="icon">🖋️</div><h3>Wills &amp; Succession</h3><p>Will drafting, probate, succession certificates and legal heir certificates.</p></div>
-    </div>
-  </div>
-</section>
+<section id="services"><div class="w c"><span class="eb">Services</span><h2 class="t">How we work with you</h2><div class="g g2" id="sv" style="text-align:left"></div></div></section>
 
-<!-- SERVICES -->
-<section id="services">
-  <div class="container center">
-    <span class="eyebrow">Services</span>
-    <h2 class="title">How I work with you</h2>
-    <div class="grid g2" style="text-align:left">
-      <div class="card"><div class="icon">💬</div><h3>Legal Consultation</h3><p>In-person, phone or video sessions to understand your matter and outline your options.</p><span class="tag">Step 1</span></div>
-      <div class="card"><div class="icon">📂</div><h3>Case Filing &amp; Representation</h3><p>Drafting pleadings, filing and appearing before courts and tribunals.</p><span class="tag">Step 2</span></div>
-      <div class="card"><div class="icon">✍️</div><h3>Drafting &amp; Documentation</h3><p>Sale deeds, agreements, legal notices, affidavits, replies and wills.</p><span class="tag">Step 3</span></div>
-      <div class="card"><div class="icon">🔍</div><h3>Legal Opinions</h3><p>Written opinions on property title, contracts and compliance for individuals and businesses.</p><span class="tag">Step 4</span></div>
-    </div>
-  </div>
-</section>
+<section class="alt" id="why"><div class="w c"><span class="eb">Why Choose Us</span><h2 class="t">Why choose us?</h2><div class="g g3" id="wy" style="text-align:left"></div></div></section>
 
-<!-- TESTIMONIALS -->
-<section class="alt" id="testimonials">
-  <div class="container center">
-    <span class="eyebrow">Client Feedback</span>
-    <h2 class="title">What clients say</h2>
-    <p class="lead">Shared with consent and anonymised in line with professional rules.</p>
-    <div class="grid g3" style="text-align:left">
-      <div class="card"><div class="stars">★★★★★</div><p class="quote">"He explained every step of my property dispute in simple language and kept me updated throughout. Very reliable."</p><p class="who">— R. S., Bengaluru</p></div>
-      <div class="card"><div class="stars">★★★★★</div><p class="quote">"Professional, prompt and honest about the chances of success. My cheque bounce case was handled smoothly."</p><p class="who">— M. K., Business Owner</p></div>
-      <div class="card"><div class="stars">★★★★★</div><p class="quote">"During a difficult family matter he was patient, sensitive and always available to answer my questions."</p><p class="who">— A. P., Whitefield</p></div>
-    </div>
-  </div>
-</section>
+<section class="band" id="consult"><div class="w"><h2 class="t">Need Legal Assistance?</h2><p>Have a legal issue or dispute and unsure about the next step?<br>Speak with Vinayakumar P, Advocate &amp; Legal Consultant.</p>
+<div class="cta"><a href="#contact" class="btn p">Request a Consultation</a><a data-tel class="btn">Call Now</a><a data-wa class="btn" target="_blank">WhatsApp Now</a></div></div></section>
 
-<!-- FAQ -->
-<section id="faq">
-  <div class="container center">
-    <span class="eyebrow">FAQ</span>
-    <h2 class="title">Common questions</h2>
-    <div class="faq" style="text-align:left">
-      <details><summary>How do I book a consultation?</summary><p>Use the form below, call the office, or message on WhatsApp. You will receive a confirmation of the time slot.</p></details>
-      <details><summary>What documents should I bring for a legal notice?</summary><p>Your ID proof, relevant agreements or receipts, previous correspondence and a short written timeline of events.</p></details>
-      <details><summary>How long does a case usually take?</summary><p>It depends on the court, type of matter and its complexity. A realistic estimate is given after reviewing your documents.</p></details>
-      <details><summary>Do you handle matters outside Bengaluru?</summary><p>Matters before the High Court of Karnataka and courts across the state can be handled. Other locations can be discussed on request.</p></details>
-      <details><summary>Are consultations confidential?</summary><p>Yes. All communication between advocate and client is privileged and kept strictly confidential.</p></details>
-    </div>
-  </div>
-</section>
+<section id="testimonials"><div class="w c"><span class="eb">Client Testimonials</span><h2 class="t">Client Testimonials</h2>
+<p class="lead">Client testimonials will be published with appropriate consent and confidentiality.</p></div></section>
 
-<!-- BLOG -->
-<section class="alt" id="blog">
-  <div class="container center">
-    <span class="eyebrow">Legal Updates</span>
-    <h2 class="title">Recent articles</h2>
-    <div class="grid g3" style="text-align:left">
-      <div class="card"><span class="tag">Criminal Law</span><h3 style="margin-top:8px">From IPC to BNS: What Changed?</h3><p>A simple overview of the new criminal laws and what they mean for ordinary citizens.</p></div>
-      <div class="card"><span class="tag">Property</span><h3 style="margin-top:8px">Checklist Before Buying a Flat</h3><p>Key documents and checks to verify before signing a sale agreement.</p></div>
-      <div class="card"><span class="tag">NI Act</span><h3 style="margin-top:8px">Cheque Bounced? First Steps</h3><p>The notice period, timelines and how a Section 138 complaint works.</p></div>
-    </div>
-  </div>
-</section>
+<section class="alt" id="articles"><div class="w c"><span class="eb">Legal Awareness</span><h2 class="t">Legal Articles</h2><p class="lead">General legal-awareness topics on rights, property, courts and procedure. Full articles will be published here.</p><div class="g g3 bl" id="bl" style="text-align:left"></div></div></section>
 
-<!-- CONTACT -->
-<section id="contact">
-  <div class="container">
-    <div class="center">
-      <span class="eyebrow">Contact</span>
-      <h2 class="title">Request a consultation</h2>
-    </div>
-    <div class="contact-grid">
-      <div>
-        <ul class="info">
-          <li><div class="icon">📍</div><div><b>Office</b><small>No. 24, 2nd Floor, Court Road, Bengaluru, Karnataka 560001</small></div></li>
-          <li><div class="icon">📞</div><div><b>Phone</b><small>+91 98765 43210</small></div></li>
-          <li><div class="icon">✉️</div><div><b>Email</b><small>vinayarya.advocate@example.com</small></div></li>
-          <li><div class="icon">🕘</div><div><b>Office Hours</b><small>Mon – Sat, 10:00 AM – 6:00 PM</small></div></li>
-        </ul>
-        <div class="map">
-          <iframe loading="lazy" title="Office location" src="https://www.google.com/maps?q=Bengaluru&output=embed"></iframe>
-        </div>
-      </div>
-      <form id="form">
-        <input type="text" id="name" placeholder="Your name" required>
-        <input type="tel" id="phone" placeholder="Phone number" required>
-        <select id="area">
-          <option>Criminal Law</option><option>Civil Litigation</option><option>Family Law</option>
-          <option>Property &amp; Real Estate</option><option>Cheque Bounce</option><option>Other</option>
-        </select>
-        <textarea id="msg" rows="4" placeholder="Briefly describe your matter" required></textarea>
-        <button class="btn primary" type="submit">Send via WhatsApp</button>
-      </form>
-    </div>
-  </div>
-</section>
+<section class="alt" id="faq"><div class="w c"><span class="eb">FAQ</span><h2 class="t">Common questions</h2><div class="faq" id="fq"></div></div></section>
 
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="foot">
-      <div>
-        <h4>Vinay Arya, Advocate</h4>
-        <p>Practising before the High Court of Karnataka and courts in Bengaluru.</p>
-      </div>
-      <div>
-        <h4>Quick Links</h4>
-        <a href="#about">About</a><a href="#practice">Practice Areas</a><a href="#faq">FAQ</a><a href="#contact">Contact</a>
-      </div>
-      <div>
-        <h4>Connect</h4>
-        <a href="#">Instagram</a><a href="#">LinkedIn</a><a href="#">WhatsApp</a>
-      </div>
-    </div>
-    <p class="disc">Disclaimer: This website is for informational purposes only and does not constitute advertisement, solicitation or legal advice, in accordance with the Bar Council of India Rules. © <span id="yr"></span> Vinay Arya. All rights reserved.</p>
-  </div>
-</footer>
+<section id="contact"><div class="w"><div class="c"><span class="eb">Contact</span><h2 class="t">Request a consultation</h2></div>
+<div class="cg"><div>
+<ul class="info" id="info"></ul>
+<a data-map class="btn p" target="_blank"><span class="i" data-ic="pin"></span>Visit Our Office · Get Directions →</a></div>
+<form id="form"><div class="r2"><input name="Name" placeholder="Full name" required><input name="Mobile" type="tel" placeholder="Mobile number" required></div>
+<div class="r2"><input name="Email" type="email" placeholder="Email"><input name="City" placeholder="City / Location"></div>
+<select name="Matter"><option>Civil Law</option><option>Property Law</option><option>Criminal Law</option><option>Cheque Bounce / NI Act</option><option>Family &amp; Matrimonial</option><option>Banking / DRT / SARFAESI</option><option>Consumer Law</option><option>High Court Matter</option><option>Legal Documentation</option><option>Other</option></select>
+<textarea name="Description" rows="3" placeholder="Brief description of matter" required></textarea>
+<div class="r2"><input name="Date" type="date" title="Preferred date"><input name="Time" type="time" title="Preferred time"></div>
+<select name="Mode"><option>Mode: Office</option><option>Mode: Phone</option><option>Mode: WhatsApp</option><option>Mode: Video Consultation</option></select>
+<small>Documents can be shared on WhatsApp once this request is sent.</small>
+<button class="btn p" type="submit">Submit Request</button>
+<small>Submitting this form does not create an advocate-client relationship. Legal advice will be provided only after consultation and acceptance of the matter.</small></form></div>
+<div class="c" style="margin-top:56px"><span class="eb">Connect With Us</span><div class="soc" id="soc"></div>
+<p class="lead" style="margin-top:18px">Legal-awareness videos on rights, property law, criminal law, family law, consumer rights and court procedures on YouTube (DVD News).</p></div></div></section>
 
-<a class="wa" href="https://wa.me/919986857597" aria-label="WhatsApp">💬</a>
+<footer><div class="w"><div class="fg"><div><h4>Aryas Law Associates</h4><p>Vinayakumar P<br>Advocate &amp; Legal Consultant</p><p><i>Committed to Justice. Focused on Solutions.</i></p></div>
+<div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#practice">Practice Areas</a><a href="#articles">Legal Articles</a><a href="#contact">Consultation</a><a href="#contact">Contact</a></div>
+<div><h4>Contact</h4><p id="fa"></p><p id="fp"></p><p id="fe"></p></div></div>
+<div class="copy"><span>© 2026 Aryas Law Associates. All Rights Reserved.</span><span><a data-l="dis">Disclaimer</a><a data-l="pri">Privacy Policy</a><a data-l="ter">Terms &amp; Conditions</a></span></div></div></footer>
+
+<div class="fl"><a data-wa target="_blank" style="background:#25d366" aria-label="WhatsApp"><span class="i" data-ic="whatsapp"></span></a><a data-tel style="background:#b8902a" aria-label="Call"><span class="i" data-ic="phone"></span></a></div>
+<div class="mo" id="mo"><div class="mbox"><button class="x" id="x">×</button><div id="mc"></div></div></div>
 
 <script>
-(function(){
-  var root = document.documentElement;
-  function store(k,v){ try{ localStorage.setItem(k,v) }catch(e){} }
-  function load(k){ try{ return localStorage.getItem(k) }catch(e){ return null } }
-
-  /* ----- theme ----- */
-  var mode = load('mode') || 'dark';
-  var accent = load('accent') || 'gold';
-  function apply(){
-    root.setAttribute('data-mode', mode);
-    root.setAttribute('data-accent', accent);
-    document.querySelectorAll('#modeSeg button').forEach(function(b){ b.classList.toggle('active', b.dataset.mode===mode) });
-    document.querySelectorAll('#accentSw button').forEach(function(b){ b.classList.toggle('active', b.dataset.accent===accent) });
-  }
-  apply();
-  document.querySelectorAll('#modeSeg button').forEach(function(b){
-    b.onclick=function(){ mode=b.dataset.mode; store('mode',mode); apply(); };
-  });
-  document.querySelectorAll('#accentSw button').forEach(function(b){
-    b.onclick=function(){ accent=b.dataset.accent; store('accent',accent); apply(); };
-  });
-
-  /* dropdown show / hide */
-  var theme = document.getElementById('theme');
-  var tbtn = document.getElementById('themeBtn');
-  tbtn.onclick=function(e){
-    e.stopPropagation();
-    var open = theme.classList.toggle('open');
-    tbtn.setAttribute('aria-expanded', open);
-  };
-  document.addEventListener('click',function(e){
-    if(!theme.contains(e.target)){ theme.classList.remove('open'); tbtn.setAttribute('aria-expanded',false); }
-  });
-  document.addEventListener('keydown',function(e){ if(e.key==='Escape') theme.classList.remove('open'); });
-
-  /* ----- mobile menu ----- */
-  var nav=document.getElementById('nav');
-  document.getElementById('menuBtn').onclick=function(){ nav.classList.toggle('open') };
-  nav.querySelectorAll('a').forEach(function(a){ a.onclick=function(){ nav.classList.remove('open') } });
-
-
-  /* ----- counters ----- */
-  var counted=false;
-  function runCounters(){
-    document.querySelectorAll('[data-count]').forEach(function(el){
-      var end=+el.dataset.count, n=0, step=Math.max(1,Math.ceil(end/60));
-      var t=setInterval(function(){ n+=step; if(n>=end){n=end;clearInterval(t)} el.textContent=n+'+'; },25);
-    });
-  }
-  var statsEl=document.querySelector('.stats');
-  if('IntersectionObserver' in window){
-    new IntersectionObserver(function(en,ob){
-      if(en[0].isIntersecting && !counted){ counted=true; runCounters(); ob.disconnect(); }
-    },{threshold:.4}).observe(statsEl);
-  } else runCounters();
-
-  /* ----- form -> WhatsApp ----- */
-  document.getElementById('form').onsubmit=function(e){
-    e.preventDefault();
-    var text='Hello Advocate Vinay Arya,%0AName: '+encodeURIComponent(document.getElementById('name').value)+
-      '%0APhone: '+encodeURIComponent(document.getElementById('phone').value)+
-      '%0AArea: '+encodeURIComponent(document.getElementById('area').value)+
-      '%0AMatter: '+encodeURIComponent(document.getElementById('msg').value);
-    window.open('https://wa.me/919986857597?text='+text,'_blank');
-  };
-
-  document.getElementById('yr').textContent=new Date().getFullYear();
-})();
+/* ===== EDIT YOUR DETAILS HERE ===== */
+const C={phone:"+91 99868 57597",wa:"+91 99868 57597",email:"vinayarya1884@gmail.com",addr:"# 212, 1st Floor, Krishna Complex, 12th C Main Road, Rajajinagar 6th Block, Bengaluru – 560 010",hours:"Monday – Saturday: 10:00 AM – 6:00 PM. Sunday: by prior appointment / closed.",map:"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("Krishna Complex, 12th C Main Road, Rajajinagar 6th Block, Bengaluru 560010"),ig:"https://www.instagram.com/vinayarya_advocate",fb:"https://www.facebook.com/people/Advocate-Vinaykumar/61568918983634/",yt:"https://www.youtube.com/@Vinaykumar_1884"};
+/* =================================== */
+const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),P=v=>v||"To be provided";
+const dg=v=>v.replace(/\D/g,""),wa=t=>C.wa?"https://wa.me/"+dg(C.wa)+(t?"?text="+encodeURIComponent(t):""):"#contact";
+const PA=[
+["scale","Civil Litigation","Legal representation in civil disputes, suits, appeals and execution proceedings.","Civil suits|Recovery suits|Declaration suits|Injunction suits|Specific performance|Partition and separate possession|Possession disputes|Restoration applications|Appeals and revisions|Execution proceedings"],
+["home","Property Law","Assistance with property disputes, title issues, partition, possession and documentation.","Property disputes|Title verification|Sale deed review|Sale agreements|Property documentation|Partition matters|Boundary disputes|Possession disputes|Land acquisition matters|Revenue/property documentation|Due diligence"],
+["lock","Criminal Law","Representation in criminal complaints, bail, trials, appeals, revisions and related proceedings.","Criminal complaints|Bail applications|Anticipatory bail|Criminal appeals|Criminal revisions|Quashing proceedings|Cheque bounce cases|Police complaint assistance|Defence representation|Criminal litigation strategy"],
+["receipt","Cheque Bounce Matters","Legal assistance relating to Section 138 Negotiable Instruments Act proceedings.","Section 138 NI Act cases|Legal notices|Complaint drafting|Defence in cheque bounce cases|Appeals against conviction/acquittal|Execution/recovery proceedings"],
+["users","Family Law","Legal assistance in matrimonial, divorce, maintenance, custody and family disputes.","Divorce proceedings|Mutual consent divorce|Maintenance matters|Domestic Violence Act proceedings|Child custody|Guardianship|Matrimonial disputes|Family settlements|Adoption-related legal assistance"],
+["landmark","Banking & DRT","Representation in banking recovery, DRT and SARFAESI-related matters.","DRT proceedings|SARFAESI disputes|Section 17 applications|Possession notice disputes|Auction-related disputes|Recovery proceedings|Bank notices|Debt recovery matters|Stay applications"],
+["cart","Consumer Law","Assistance in consumer disputes, deficiency of service and compensation claims.","Consumer complaints|Medical negligence matters|Deficiency in service|Product/service disputes|Compensation claims|Consumer appeals"],
+["building","High Court Practice","Writs, petitions, appeals, revisions and interim applications before the High Court.","Writ petitions|Criminal petitions|Criminal appeals|Civil revision petitions|Regular first appeals|Regular second appeals|Review petitions|Interim applications|Stay applications|Quashing petitions"],
+["file","Legal Documentation","Drafting and review of agreements, notices, affidavits and legal documents.","Legal notices|Reply notices|Agreements|Sale agreements|Loan agreements|Affidavits|Memorandum of Understanding|Partnership/business documentation|Property documentation|Legal opinions"]];
+const SV=[["message","Legal Consultation","Professional consultation to understand the facts, identify legal rights and liabilities, evaluate available remedies and determine an appropriate legal strategy."],
+["scale","Litigation & Court Representation","Representation before appropriate courts and tribunals, including preparation of pleadings, applications, arguments and other necessary proceedings."],
+["home","Property Legal Services","Assistance relating to ownership, title, possession, partition, sale, purchase, inheritance, documentation and property disputes."],
+["lock","Criminal Defence","Legal assistance in criminal complaints, bail proceedings, criminal trials, appeals, revisions and other criminal proceedings."],
+["users","Family Law","Assistance in matrimonial, divorce, maintenance, domestic violence, custody, guardianship and family-property disputes."],
+["landmark","Banking & DRT Matters","Representation in disputes involving banks, financial institutions, recovery, SARFAESI proceedings, DRT matters and auction/possession disputes."],
+["mail","Legal Notices","Drafting and issuing legally appropriate notices relating to recovery, property, contractual, matrimonial, consumer and other disputes."],
+["file","Legal Documentation","Preparation, review and legal analysis of agreements, affidavits, deeds, contracts and other legal documents."]];
+const WY=[["cap","Professional Legal Guidance","Every matter is examined carefully before suggesting an appropriate legal course."],["heart","Client-Focused Approach","We focus on understanding the client’s objectives, concerns and legal position."],["target","Strategic Representation","Legal proceedings are approached with careful preparation and practical strategy."],["shield","Confidentiality","Client information and legal matters are handled with professional confidentiality."],["building","Comprehensive Legal Services","Consultation, drafting, documentation and litigation assistance under one professional practice."]];
+const BL=[["Civil Law","What is a civil suit?|Difference between declaration and injunction|Partition rights|Property dispute remedies"],
+["Property Law","How to verify property title before purchase|Importance of Encumbrance Certificate|Sale deed vs Sale Agreement|Ancestral property rights|Rights of legal heirs"],
+["Criminal Law","Arrest without warrant|Bail and anticipatory bail|Rights of an accused|FIR and complaint|Police investigation"],
+["Family Law","Mutual consent divorce|Maintenance rights|Child custody|Domestic Violence Act|Property rights of legal heirs"],
+["Banking Law","What to do after receiving a bank recovery notice|SARFAESI proceedings|DRT remedies|Auction of secured property"],
+["Cheque Bounce","Section 138 NI Act|Legal notice procedure|Time limits in cheque bounce cases|Defence in cheque bounce cases"]];
+const FQ=[["How do I book a consultation?","Use the consultation form, call, or message on WhatsApp. The time slot will be confirmed, subject to court commitments."],
+["Does submitting the form create an advocate-client relationship?","No. Legal advice is provided only after consultation and acceptance of the matter."],
+["Which matters do you handle?","Civil, property, criminal, cheque bounce, family, banking/DRT/SARFAESI, consumer, High Court matters and legal documentation."],
+["Can I consult by phone or video?","Yes. Consultations can be arranged at the office, by phone, WhatsApp or video."],
+["Is my information kept confidential?","Yes. Client information and legal matters are handled with professional confidentiality."]];
+const LG={dis:["Disclaimer","The information published on this website is intended for general legal-awareness and informational purposes only. It should not be construed as legal advice or as a substitute for consultation with a qualified advocate.|Viewing this website, submitting an enquiry or communicating through the website does not by itself create an advocate-client relationship.|The outcome of any legal matter depends upon the facts, evidence, applicable law and circumstances of each individual case."],
+pri:["Privacy Policy","Details you submit through this website (such as name, phone, email and a description of your matter) are used only to respond to your enquiry.|We do not sell or share your information with third parties, except where required by law.|Enquiries are handled with professional confidentiality. Please avoid sharing sensitive documents until a consultation is arranged.|For any privacy request, contact us using the details in the Contact section."],
+ter:["Terms & Conditions","This website is for general information only and is not legal advice.|No advocate-client relationship is created by using this website or sending an enquiry. It begins only after consultation and acceptance of the matter.|Content on this website is the property of Aryas Law Associates and may not be copied without permission.|Aryas Law Associates is not responsible for decisions taken solely on the basis of website content."]};
+const IC={scale:'<path d="M16 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M2 16l3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1z"/><path d="M7 21h10M12 3v18M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/>',
+home:'<path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><path d="M9 22V12h6v10"/>',
+lock:'<rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/>',
+receipt:'<path d="M4 2v20l3-2 2 2 3-2 3 2 2-2 3 2V2l-3 2-2-2-3 2-3-2-2 2z"/><path d="M8 8h8M8 12h8"/>',
+users:'<path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/>',
+landmark:'<path d="M3 22h18M6 18v-7M10 18v-7M14 18v-7M18 18v-7M12 2L3 7h18z"/>',
+building:'<path d="M3 21h18M5 21V7l7-4 7 4v14M9 21v-6h6v6"/>',
+cart:'<circle cx="9" cy="21" r="1"/><circle cx="20" cy="21" r="1"/><path d="M1 1h4l2.68 13.39a2 2 0 0 0 2 1.61h9.72a2 2 0 0 0 2-1.61L23 6H6"/>',
+file:'<path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><path d="M14 2v6h6M16 13H8M16 17H8M10 9H8"/>',
+message:'<path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/>',
+mail:'<rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 7l-10 5L2 7"/>',
+cap:'<path d="M22 10L12 5 2 10l10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/>',
+heart:'<path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>',
+target:'<circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/>',
+shield:'<path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>',
+pin:'<path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/>',
+phone:'<path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/>',
+clock:'<circle cx="12" cy="12" r="10"/><path d="M12 6v6l4 2"/>',
+instagram:'<rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.5h.01"/>',
+facebook:'<path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/>',
+youtube:'<path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"/><path d="M10 15l5-3-5-3z"/>',
+whatsapp:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><g transform="translate(7 7) scale(.42)" stroke-width="3.6"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></g>',
+camera:'<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>',
+moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
+sun:'<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>',
+menu:'<path d="M3 6h18M3 12h18M3 18h18"/>',chev:'<path d="M6 9l6 6 6-6"/>'};
+const ic=n=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+IC[n]+'</svg>';
+const mo=$("#mo"),mc=$("#mc"),open=h=>{mc.innerHTML=h;mo.classList.add("on")};
+const box=(t,ps)=>open("<h3>"+t+"</h3>"+ps.map(p=>"<p>"+p+"</p>").join(""));
+$("#pa").innerHTML=PA.map((a,i)=>`<div class="card"><div class="ic">${ic(a[0])}</div><h3>${a[1]}</h3><p>${a[2]}</p><button class="more" data-i="${i}">View matters →</button></div>`).join("");
+$$(".more").forEach(b=>b.onclick=()=>{const a=PA[b.dataset.i];open(`<h3>${a[1]}</h3><p>${a[2]}</p><ul>${a[3].split("|").map(x=>"<li>"+x+"</li>").join("")}</ul><br><a href="#contact" class="btn p" onclick="mo.classList.remove('on')">Request a Consultation</a>`)});
+const cd=(a,p)=>a.map(x=>`<div class="card"><div class="ic">${ic(x[0])}</div><h3>${x[1]}</h3><p>${x[2]}</p></div>`).join("");
+$("#sv").innerHTML=cd(SV);$("#wy").innerHTML=cd(WY);
+$("#bl").innerHTML=BL.map(b=>`<div class="card"><h3>${b[0]}</h3><ul>${b[1].split("|").map(x=>"<li>"+x+"</li>").join("")}</ul></div>`).join("");
+$("#fq").innerHTML=FQ.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("");
+$("#info").innerHTML=[["pin","Office","Aryas Law Associates, Vinayakumar P<br>"+P(C.addr)],["phone","Phone / WhatsApp",P(C.phone)+(C.wa&&C.wa!==C.phone?" · "+C.wa:"")],["mail","Email",P(C.email)],["clock","Working Hours",C.hours+"<br>Court appearances: appointments subject to court commitments."]]
+.map(r=>`<li><div class="ic">${ic(r[0])}</div><div><b>${r[1]}</b><small>${r[2]}</small></div></li>`).join("");
+$("#soc").innerHTML=[["whatsapp","WhatsApp",C.wa&&wa()],["instagram","Instagram",C.ig],["facebook","Facebook",C.fb],["youtube","YouTube · DVD News",C.yt]].map(s=>`<a href="${s[2]||"#contact"}" ${s[2]?'target="_blank" rel="noopener"':""}>${ic(s[0])} ${s[1]}</a>`).join("");
+$("#fa").innerHTML=ic("pin")+P(C.addr);$("#fp").innerHTML=ic("phone")+P(C.phone);$("#fe").innerHTML=ic("mail")+P(C.email);
+$$("[data-wa]").forEach(a=>a.href=wa("Hello Advocate Vinayakumar P, I would like to request a consultation."));
+$$("[data-tel]").forEach(a=>a.href=C.phone?"tel:"+C.phone.replace(/\s/g,""):"#contact");
+$$("[data-map]").forEach(a=>a.href=C.map||"#contact");
+$$("[data-l]").forEach(a=>a.onclick=()=>{const l=LG[a.dataset.l];box(l[0],l[1].split("|"))});
+$("#form").onsubmit=e=>{e.preventDefault();if(!C.wa){alert("WhatsApp number is not added yet.");return}
+window.open(wa("Consultation request\n"+[...new FormData(e.target)].map(([k,v])=>k+": "+v).join("\n")),"_blank")};
+$("#x").onclick=()=>mo.classList.remove("on");mo.onclick=e=>{if(e.target===mo)mo.classList.remove("on")};
+document.addEventListener("keydown",e=>{if(e.key==="Escape"){mo.classList.remove("on");$("#th").classList.remove("open")}});
+/* theme */
+const R=document.documentElement,sv=(k,v)=>{try{localStorage.setItem(k,v)}catch(e){}},ld=k=>{try{return localStorage.getItem(k)}catch(e){return null}};
+const setM=m=>{R.dataset.mode=m;$$(".thm button").forEach(b=>b.classList.toggle("on",b.dataset.m===m))};setM(ld("mode")||"dark");
+$$(".thm button").forEach(b=>b.onclick=()=>{setM(b.dataset.m);sv("mode",b.dataset.m)});
+$("#thb").onclick=e=>{e.stopPropagation();$("#th").classList.toggle("open")};
+document.addEventListener("click",e=>{if(!$("#th").contains(e.target))$("#th").classList.remove("open")});
+$("#mb").onclick=()=>$("#nav").classList.toggle("open");$$("#nav a").forEach(a=>a.onclick=()=>$("#nav").classList.remove("open"));
+if("IntersectionObserver" in window){const o=new IntersectionObserver(es=>es.forEach(x=>{if(x.isIntersecting){x.target.classList.add("in");o.unobserve(x.target)}}),{threshold:.12});
+$$(".card,.faq details,.facts div,.pic,.t,.chips,form,.soc").forEach(e=>{e.classList.add("rv");o.observe(e)})}
+$$("[data-ic]").forEach(e=>e.innerHTML=ic(e.dataset.ic));
 </script>
 </body>
 </html>
