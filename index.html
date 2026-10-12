@@ -142,7 +142,7 @@ nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom
 <button class="btn p" type="submit">Submit Request</button>
 <small>Submitting this form does not create an advocate-client relationship. Legal advice will be provided only after consultation and acceptance of the matter.</small></form></div>
 <div class="c" style="margin-top:56px"><span class="eb">Connect With Us</span><div class="soc" id="soc"></div>
-<p class="lead" style="margin-top:18px">Legal-awareness videos on rights, property law, criminal law, family law, consumer rights and court procedures on YouTube (DVD News).</p></div></div></section>
+<p class="lead" style="margin-top:18px">Legal-awareness videos on rights, property law, criminal law, family law, consumer rights and court procedures on YouTube.</p></div></div></section>
 
 <footer><div class="w"><div class="fg"><div><h4>Aryas Law Associates</h4><p>Vinayakumar P<br>Advocate &amp; Legal Consultant</p><p><i>Committed to Justice. Focused on Solutions.</i></p></div>
 <div><h4>Quick Links</h4><a href="#home">Home</a><a href="#about">About</a><a href="#practice">Practice Areas</a><a href="#articles">Legal Articles</a><a href="#contact">Consultation</a><a href="#contact">Contact</a></div>
@@ -154,7 +154,7 @@ nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom
 
 <script>
 /* ===== EDIT YOUR DETAILS HERE ===== */
-const C={phone:"+91 99868 57597",wa:"+91 99868 57597",email:"vinayarya1884@gmail.com",addr:"# 212, 1st Floor, Krishna Complex, 12th C Main Road, Rajajinagar 6th Block, Bengaluru – 560 010",hours:"Monday – Saturday: 10:00 AM – 6:00 PM. Sunday: by prior appointment / closed.",map:"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("Krishna Complex, 12th C Main Road, Rajajinagar 6th Block, Bengaluru 560010"),ig:"https://www.instagram.com/vinayarya_advocate",fb:"https://www.facebook.com/people/Advocate-Vinaykumar/61568918983634/",yt:"https://www.youtube.com/@Vinaykumar_1884"};
+const C={phone:"+91 99868 57597",wa:"+91 99868 57597",email:"vinayarya1884@gmail.com",addr:"# 212, 1st Floor, Krishna Complex, 12th C Main Road, Rajajinagar 6th Block, Bengaluru – 560 010",hours:"Monday – Saturday: 10:00 AM – 6:00 PM. Sunday: by prior appointment / closed.",map:"https://www.google.com/maps/search/?api=1&query="+encodeURIComponent("Krishna Complex, 12th C Main Road, Rajajinagar 6th Block, Bengaluru 560010"),ig:"https://www.instagram.com/vinayarya_advocate",fb:"https://www.facebook.com/people/Advocate-Vinaykumar/61568918983634/",yt:"https://www.youtube.com/@Vinaykumar_1884",li:"https://www.linkedin.com/in/vinay-kumar-b3146a190/"};
 /* =================================== */
 const $=s=>document.querySelector(s),$$=s=>document.querySelectorAll(s),P=v=>v||"To be provided";
 const dg=v=>v.replace(/\D/g,""),wa=t=>C.wa?"https://wa.me/"+dg(C.wa)+(t?"?text="+encodeURIComponent(t):""):"#contact";
@@ -216,6 +216,7 @@ whatsapp:'<path d="M7.9 20A9 9 0 1 0 4 16.1L2 22z"/><g transform="translate(7 7)
 camera:'<path d="M23 19a2 2 0 0 1-2 2H3a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h4l2-3h6l2 3h4a2 2 0 0 1 2 2z"/><circle cx="12" cy="13" r="4"/>',
 moon:'<path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/>',
 sun:'<circle cx="12" cy="12" r="5"/><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"/>',
+linkedin:'<path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-4 0v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>',
 menu:'<path d="M3 6h18M3 12h18M3 18h18"/>',chev:'<path d="M6 9l6 6 6-6"/>'};
 const ic=n=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">'+IC[n]+'</svg>';
 const mo=$("#mo"),mc=$("#mc"),open=h=>{mc.innerHTML=h;mo.classList.add("on")};
@@ -228,7 +229,7 @@ $("#bl").innerHTML=BL.map(b=>`<div class="card"><h3>${b[0]}</h3><ul>${b[1].split
 $("#fq").innerHTML=FQ.map(f=>`<details><summary>${f[0]}</summary><p>${f[1]}</p></details>`).join("");
 $("#info").innerHTML=[["pin","Office","Aryas Law Associates, Vinayakumar P<br>"+P(C.addr)],["phone","Phone / WhatsApp",P(C.phone)+(C.wa&&C.wa!==C.phone?" · "+C.wa:"")],["mail","Email",P(C.email)],["clock","Working Hours",C.hours+"<br>Court appearances: appointments subject to court commitments."]]
 .map(r=>`<li><div class="ic">${ic(r[0])}</div><div><b>${r[1]}</b><small>${r[2]}</small></div></li>`).join("");
-$("#soc").innerHTML=[["whatsapp","WhatsApp",C.wa&&wa()],["instagram","Instagram",C.ig],["facebook","Facebook",C.fb],["youtube","YouTube · DVD News",C.yt]].map(s=>`<a href="${s[2]||"#contact"}" ${s[2]?'target="_blank" rel="noopener"':""}>${ic(s[0])} ${s[1]}</a>`).join("");
+$("#soc").innerHTML=[["whatsapp","WhatsApp",C.wa&&wa()],["instagram","Instagram",C.ig],["facebook","Facebook",C.fb],["youtube","YouTube",C.yt],["linkedin","LinkedIn",C.li]].map(s=>`<a href="${s[2]||"#contact"}" ${s[2]?'target="_blank" rel="noopener"':""}>${ic(s[0])} ${s[1]}</a>`).join("");
 $("#fa").innerHTML=ic("pin")+P(C.addr);$("#fp").innerHTML=ic("phone")+P(C.phone);$("#fe").innerHTML=ic("mail")+P(C.email);
 $$("[data-wa]").forEach(a=>a.href=wa("Hello Advocate Vinayakumar P, I would like to request a consultation."));
 $$("[data-tel]").forEach(a=>a.href=C.phone?"tel:"+C.phone.replace(/\s/g,""):"#contact");
