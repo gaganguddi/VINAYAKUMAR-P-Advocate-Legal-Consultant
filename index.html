@@ -243,7 +243,7 @@ $("#info").innerHTML=[["pin","Office","Aryas Law Associates, Vinayakumar P<br>"+
 .map(r=>`<li><div class="ic">${ic(r[0])}</div><div><b>${r[1]}</b><small>${r[2]}</small></div></li>`).join("");
 $("#soc").innerHTML=[["whatsapp","WhatsApp",C.wa&&wa()],["instagram","Instagram",C.ig],["facebook","Facebook",C.fb],["youtube","YouTube",C.yt],["linkedin","LinkedIn",C.li]].map(s=>`<a href="${s[2]||"#contact"}" ${s[2]?'target="_blank" rel="noopener"':""}>${ic(s[0])} ${s[1]}</a>`).join("");
 $("#fa").innerHTML=ic("pin")+P(C.addr);$("#fp").innerHTML=ic("phone")+P(C.phone);$("#fe").innerHTML=ic("mail")+P(C.email);
-$$("[data-wa]").forEach(a=>a.href=wa("Hello Advocate Vinayakumar P, I would like to request a consultation."));
+$$("[data-wa]").forEach(a=>a.href=wa("Hello, I would like to get in touch with Advocate Vinayakumar P."));
 $$("[data-tel]").forEach(a=>a.href=C.phone?"tel:"+C.phone.replace(/\s/g,""):"#contact");
 $$("[data-map]").forEach(a=>a.href=C.map||"#contact");
 $$("[data-l]").forEach(a=>a.onclick=()=>{const l=LG[a.dataset.l];box(l[0],l[1].split("|"))});
