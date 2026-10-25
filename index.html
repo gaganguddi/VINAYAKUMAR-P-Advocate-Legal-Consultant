@@ -18,7 +18,7 @@ $$("[data-ic]").forEach(e=>e.innerHTML=ic(e.dataset.ic));
 [data-mode=dark]{--bg:#0a0a0a;--bg2:#121212;--card:#171717;--text:#f2f2f2;--muted:#a8a8a8;--line:#2b2b2b;--gold:#d4af37;--ink:#111}
 [data-mode=light]{--bg:#fafaf7;--bg2:#fff;--card:#fff;--text:#111;--muted:#555;--line:#e6e1d3;--gold:#a8801f;--ink:#fff}
 *{box-sizing:border-box;margin:0;padding:0}
-html{scroll-behavior:smooth;scroll-padding-top:76px}
+html{scroll-behavior:smooth;scroll-padding-top:116px}
 body{font-family:var(--sans);background:var(--bg);color:var(--text);line-height:1.65;transition:background .3s,color .3s}
 img,video{max-width:100%;display:block}a{color:inherit;text-decoration:none}
 .w{width:min(1120px,92%);margin-inline:auto}section{padding:80px 0}.alt{background:var(--bg2)}
@@ -30,6 +30,12 @@ h1,h2,h3{font-family:var(--serif);line-height:1.2}
 .btn.p{background:var(--gold);color:var(--ink)}.btn.p:hover{transform:translateY(-2px)}.btn:not(.p):hover{background:var(--gold);color:var(--ink)}
 header{position:sticky;top:0;z-index:50;background:color-mix(in srgb,var(--bg) 88%,transparent);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
 .bar{display:flex;align-items:center;justify-content:space-between;height:68px;gap:12px}
+.disclaimer-bar{position:sticky;top:69px;z-index:49;overflow:hidden;background:var(--bg2);border-bottom:1px solid var(--line);color:var(--muted)}
+.disclaimer-track{display:flex;width:max-content;animation:disclaimer-scroll 58s linear infinite}
+.disclaimer-copy{display:flex;flex:none;align-items:center;gap:10px;white-space:nowrap;padding:5px 4vw 5px 0;font-size:.7rem;line-height:1.4}
+.disclaimer-label{flex:none;color:var(--gold);font-size:.62rem;font-weight:600;letter-spacing:.12em}
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+@keyframes disclaimer-scroll{to{transform:translateX(-50%)}}
 .logo{font-family:var(--serif);font-weight:700;line-height:1.1}.logo small{display:block;font:500 .65rem var(--sans);letter-spacing:.16em;text-transform:uppercase;color:var(--gold)}
 nav ul{display:flex;gap:20px;list-style:none}nav a{font-size:.88rem;color:var(--muted)}nav a:hover{color:var(--gold)}
 .tools{display:flex;gap:10px;align-items:center}.mb{display:none;background:none;border:1px solid var(--line);color:var(--text);width:40px;height:40px;border-radius:10px;font-size:1.2rem;cursor:pointer}
@@ -83,7 +89,7 @@ footer p svg{width:16px;height:16px;vertical-align:-3px;margin-right:8px;color:v
 nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom:1px solid var(--line);display:none}nav.open{display:block}nav ul{flex-direction:column;padding:14px 5%;gap:14px}}
 @media(max-width:600px){.g3,.g2,.r2{grid-template-columns:1fr}.thb span{display:none}.logo{font-size:1rem}}
 .rv{opacity:0}.rv.in{opacity:1;animation:up .7s backwards}@keyframes up{from{opacity:0;transform:translateY(26px)}}
-@media(prefers-reduced-motion:reduce){.rv{opacity:1}.rv.in{animation:none}.hero video{display:none}}
+@media(prefers-reduced-motion:reduce){.rv{opacity:1}.rv.in{animation:none}}
 </style>
 </head>
 <body>
@@ -96,13 +102,20 @@ nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom
 <div class="thm"><button data-m="dark"><span class="i" data-ic="moon"></span>Dark (Black &amp; Gold)</button><button data-m="light"><span class="i" data-ic="sun"></span>Light (White &amp; Gold)</button></div></div>
 <button class="mb" id="mb" aria-label="Menu"><span class="i" data-ic="menu"></span></button></div></div></header>
 
+<aside class="disclaimer-bar" aria-label="Legal disclaimer">
+<p class="sr-only">This website is intended solely for legal education and general informational purposes. Its content is not a substitute for professional legal advice and does not create an advocate–client relationship. No advertisement, solicitation, or guarantee of any legal outcome is intended.</p>
+<div class="disclaimer-track" aria-hidden="true">
+<div class="disclaimer-copy"><span class="disclaimer-label">DISCLAIMER</span><span>This website is intended solely for legal education and general informational purposes. Its content is not a substitute for professional legal advice and does not create an advocate–client relationship. No advertisement, solicitation, or guarantee of any legal outcome is intended.</span></div>
+<div class="disclaimer-copy disclaimer-copy--duplicate"><span class="disclaimer-label">DISCLAIMER</span><span>This website is intended solely for legal education and general informational purposes. Its content is not a substitute for professional legal advice and does not create an advocate–client relationship. No advertisement, solicitation, or guarantee of any legal outcome is intended.</span></div>
+</div></aside>
+
 <section class="hero" id="home">
 <video autoplay muted loop playsinline preload="auto"><source src="assets/BackgroundVideo/backgroundVideo.mp4" type="video/mp4"></video>
 <div class="w"><span class="eb">Karnataka · Advocate</span>
 <h1>VINAYAKUMAR P</h1><h2>Advocate &amp; Legal Consultant</h2><p class="firm">Aryas Law Associates</p>
 <p class="tag">“Committed to Justice. Focused on Solutions.”</p>
 <p class="d">Professional legal consultation, litigation representation, legal drafting and strategic legal assistance.</p>
-<div class="cta"><a href="#consult" class="btn p">Book a Consultation</a><a data-wa class="btn" target="_blank">WhatsApp Us</a></div></div></section>
+</div></section>
 
 <section id="about"><div class="w ab">
 <div class="pic">VP<img src="assets/advocate.jpg" alt="Vinayakumar P, Advocate" onerror="this.remove()"></div>
@@ -119,7 +132,7 @@ nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom
 <section class="alt" id="why"><div class="w c"><span class="eb">Why Choose Us</span><h2 class="t">Why choose us?</h2><div class="g g3" id="wy" style="text-align:left"></div></div></section>
 
 <section class="band" id="consult"><div class="w"><h2 class="t">Need Legal Assistance?</h2><p>Have a legal issue or dispute and unsure about the next step?<br>Speak with Vinayakumar P, Advocate &amp; Legal Consultant.</p>
-<div class="cta"><a href="#contact" class="btn p">Request a Consultation</a><a data-tel class="btn">Call Now</a><a data-wa class="btn" target="_blank">WhatsApp Now</a></div></div></section>
+<div class="cta"><a href="#contact" class="btn p">Know more</a><a data-wa class="btn" target="_blank">WhatsApp Now</a></div></div></section>
 
 <section id="testimonials"><div class="w c"><span class="eb">Client Testimonials</span><h2 class="t">Client Testimonials</h2>
 <p class="lead">Client testimonials will be published with appropriate consent and confidentiality.</p></div></section>
@@ -128,16 +141,15 @@ nav{position:absolute;left:0;right:0;top:68px;background:var(--bg);border-bottom
 
 <section class="alt" id="faq"><div class="w c"><span class="eb">FAQ</span><h2 class="t">Common questions</h2><div class="faq" id="fq"></div></div></section>
 
-<section id="contact"><div class="w"><div class="c"><span class="eb">Contact</span><h2 class="t">Request a consultation</h2></div>
+<section id="contact"><div class="w"><div class="c"><span class="eb">Contact</span><h2 class="t">Get help</h2></div>
 <div class="cg"><div>
 <ul class="info" id="info"></ul>
-<a data-map class="btn p" target="_blank"><span class="i" data-ic="pin"></span>Visit Our Office · Get Directions →</a></div>
+<a data-map class="btn p" target="_blank"><span class="i" data-ic="pin"></span>Way to reach me</a></div>
 <form id="form"><div class="r2"><input name="Name" placeholder="Full name" required><input name="Mobile" type="tel" placeholder="Mobile number" required></div>
-<div class="r2"><input name="Email" type="email" placeholder="Email"><input name="City" placeholder="City / Location"></div>
+<input name="City" placeholder="City / Location">
 <select name="Matter"><option>Civil Law</option><option>Property Law</option><option>Criminal Law</option><option>Cheque Bounce / NI Act</option><option>Family &amp; Matrimonial</option><option>Banking / DRT / SARFAESI</option><option>Consumer Law</option><option>High Court Matter</option><option>Legal Documentation</option><option>Other</option></select>
 <textarea name="Description" rows="3" placeholder="Brief description of matter" required></textarea>
 <div class="r2"><input name="Date" type="date" title="Preferred date"><input name="Time" type="time" title="Preferred time"></div>
-<select name="Mode"><option>Mode: Office</option><option>Mode: Phone</option><option>Mode: WhatsApp</option><option>Mode: Video Consultation</option></select>
 <small>Documents can be shared on WhatsApp once this request is sent.</small>
 <button class="btn p" type="submit">Submit Request</button>
 <small>Submitting this form does not create an advocate-client relationship. Legal advice will be provided only after consultation and acceptance of the matter.</small></form></div>
@@ -222,7 +234,7 @@ const ic=n=>'<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-w
 const mo=$("#mo"),mc=$("#mc"),open=h=>{mc.innerHTML=h;mo.classList.add("on")};
 const box=(t,ps)=>open("<h3>"+t+"</h3>"+ps.map(p=>"<p>"+p+"</p>").join(""));
 $("#pa").innerHTML=PA.map((a,i)=>`<div class="card"><div class="ic">${ic(a[0])}</div><h3>${a[1]}</h3><p>${a[2]}</p><button class="more" data-i="${i}">View matters →</button></div>`).join("");
-$$(".more").forEach(b=>b.onclick=()=>{const a=PA[b.dataset.i];open(`<h3>${a[1]}</h3><p>${a[2]}</p><ul>${a[3].split("|").map(x=>"<li>"+x+"</li>").join("")}</ul><br><a href="#contact" class="btn p" onclick="mo.classList.remove('on')">Request a Consultation</a>`)});
+$$(".more").forEach(b=>b.onclick=()=>{const a=PA[b.dataset.i],matters=a[3].split("|");open(`<h3>${a[1]}</h3><p>${a[2]}</p><ul>${matters.map(x=>"<li>"+x+"</li>").join("")}</ul><br><a href="${wa(`Hello Advocate Vinayakumar P, I would like to know more about ${a[1]}.\n\n${a[2]}\n\nMatters: ${matters.join(", ")}`)}" class="btn p" target="_blank" rel="noopener">Know more</a>`)});
 const cd=(a,p)=>a.map(x=>`<div class="card"><div class="ic">${ic(x[0])}</div><h3>${x[1]}</h3><p>${x[2]}</p></div>`).join("");
 $("#sv").innerHTML=cd(SV);$("#wy").innerHTML=cd(WY);
 $("#bl").innerHTML=BL.map(b=>`<div class="card"><h3>${b[0]}</h3><ul>${b[1].split("|").map(x=>"<li>"+x+"</li>").join("")}</ul></div>`).join("");
